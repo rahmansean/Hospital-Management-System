@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: #2471A3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HospitalManagementSystem.FindDoctorsController">
+   <children>
+      <ImageView fitHeight="431.0" fitWidth="545.0" layoutX="347.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/online-doctor-registration-appointment-illustration-cartoon-flat-man-patient-character-choose-search-specialist-doctoral-treatment-advice-modern-online-medicine-concept-background_213110-508.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="75.0" layoutY="32.0" prefHeight="62.0" prefWidth="218.0" text="Find Doctors" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="returnMP" fitHeight="34.0" fitWidth="36.0" onMouseClicked="#returnMPAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/back.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="14.0" layoutY="94.0" prefHeight="363.0" prefWidth="323.0" style="-fx-background-color: #F0B27A;">
+         <children>
+            <Label layoutX="6.0" layoutY="111.0" prefHeight="52.0" prefWidth="311.0" style="-fx-background-color: #EC7063;" text="Select Symptoms" textFill="WHITE">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="SelectDocSearchBTN" layoutX="38.0" layoutY="260.0" onAction="#SelectDocSearchBTNAction" prefHeight="62.0" prefWidth="218.0" style="-fx-background-color: #EC7063; -fx-background-radius: 25px; -fx-border-radius: 25px;" text="Search" />
+            <JFXComboBox fx:id="selectSymptomscmbbox" layoutX="10.0" layoutY="169.0" prefHeight="52.0" prefWidth="311.0" promptText="- Select Symptoms -" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

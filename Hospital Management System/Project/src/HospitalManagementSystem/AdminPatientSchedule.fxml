@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HospitalManagementSystem.AdminPatientScheduleController">
+   <children>
+      <TableView fx:id="tableUsers" layoutX="18.0" layoutY="73.0" prefHeight="366.0" prefWidth="865.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="35.0" style="-fx-font-size: 15;" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="99.0" style="-fx-font-size: 15;" text="Name" />
+            <TableColumn fx:id="colEmail" prefWidth="106.0" style="-fx-font-size: 15;" text="Email" />
+            <TableColumn fx:id="colGender" prefWidth="61.0" style="-fx-font-size: 15;" text="Gender" />
+            <TableColumn fx:id="colBirth" prefWidth="106.0" style="-fx-font-size: 15;" text="Date of Birth" />
+            <TableColumn fx:id="colTime" prefWidth="93.0" style="-fx-font-size: 15;" text="Time Slot" />
+            <TableColumn fx:id="colDate" prefWidth="146.0" style="-fx-font-size: 15;" text="Appointment Date" />
+            <TableColumn fx:id="colDoctorName" prefWidth="119.0" style="-fx-font-size: 15;" text="Doctor'd Name" />
+            <TableColumn fx:id="colDisease" prefWidth="99.0" style="-fx-font-size: 15;" text="Department" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="DeleteBTN" layoutX="18.0" layoutY="446.0" onAction="#DeleteBTN" prefHeight="62.0" prefWidth="153.0" ripplerFill="WHITE" style="-fx-background-color: #BECADA;" text="Remove">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="back" fitHeight="51.0" fitWidth="71.0" onMouseClicked="#backAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/back.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="355.0" prefHeight="69.0" prefWidth="191.0" text="Schedule " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Label>
+      <Label fx:id="Label" layoutX="367.0" layoutY="471.0" prefHeight="37.0" prefWidth="224.0" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

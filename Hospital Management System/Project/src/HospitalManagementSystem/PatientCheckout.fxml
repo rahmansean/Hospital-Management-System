@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to right top, #0473ed, #009aff, #00b7ef, #00cec4, #00df93, #82db5d, #c3d12d, #ffbf19, #ff995d, #ff83a0, #ff8ada, #bc9cf9);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HospitalManagementSystem.PatientCheckoutController">
+   <children>
+      <Label layoutX="97.0" layoutY="288.0" text="SRS Hospital">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="348.0" text="The Heart of Your Healthcare">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="181.0" fitWidth="179.0" layoutX="100.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/logo2.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="396.0" layoutY="39.0" prefHeight="423.0" prefWidth="476.0" style="-fx-background-color: #98AFC7;">
+         <children>
+            <Label layoutX="161.0" layoutY="31.0" text="Doctor Name">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="187.0" layoutY="219.0" text="Total Fee">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="DoctorNameLabel" layoutX="25.0" layoutY="88.0" prefHeight="88.0" prefWidth="431.0" style="-fx-background-color: white;">
+               <font>
+                  <Font size="28.0" />
+               </font></Label>
+            <Label fx:id="FeesLabel" layoutX="92.0" layoutY="287.0" prefHeight="81.0" prefWidth="308.0" style="-fx-background-color: white;">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="235.0" layoutY="480.0" text="Thank you for visiting us!">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="returnMP" fitHeight="49.0" fitWidth="46.0" layoutX="14.0" layoutY="11.0" onMouseClicked="#returnMPAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" opacity="0.83" prefHeight="555.0" prefWidth="903.0" style="-fx-background-color: linear-gradient(to right top, #d17d6b, #e09296, #e6abbc, #e8c5da, #eddfef, #e9e5f6, #e6eafc, #e3f0ff, #bee9ff, #8fe4fb, #56dfe9, #00d8ca);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HospitalManagementSystem.MenuPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="74.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="904.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <ImageView fitHeight="74.0" fitWidth="151.0" layoutX="14.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/logo2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="88.0" layoutY="-1.0" prefHeight="58.0" prefWidth="173.0" text="SRS HOSPITAL" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="28.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="findDoctorbtn" contentDisplay="RIGHT" layoutX="426.0" layoutY="103.0" onAction="#findDoctorbtnAction" prefHeight="99.0" prefWidth="192.0" style="-fx-background-color: #6698FF; -fx-border-radius: 25px; -fx-background-radius: 25px;" text="Find Doctors">
+         <graphic>
+            <ImageView fitHeight="74.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/72-512.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="schedule" contentDisplay="RIGHT" layoutX="637.0" layoutY="103.0" onAction="#scheduleAction" prefHeight="99.0" prefWidth="192.0" style="-fx-background-color: #6698FF; -fx-border-radius: 25px; -fx-background-radius: 25px;" text="Schedule">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="63.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/schedule-icon-transparent-6.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="HealthQueriesBtn" contentDisplay="RIGHT" layoutX="426.0" layoutY="233.0" onAction="#HealthQueriesBtnAction" prefHeight="99.0" prefWidth="192.0" style="-fx-background-color: #6698FF; -fx-border-radius: 25px; -fx-background-radius: 25px;" text="Health Queries">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="62.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/appointment-15-246052.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="CheckOutBTN" contentDisplay="RIGHT" layoutX="637.0" layoutY="233.0" onAction="#CheckOutBTNAction" prefHeight="99.0" prefWidth="192.0" style="-fx-background-color: #6698FF; -fx-border-radius: 25px; -fx-background-radius: 25px;" text="Check Out">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="58.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/checkout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="dgtest" contentDisplay="RIGHT" layoutX="426.0" layoutY="361.0" onAction="#dgtestAction" prefHeight="99.0" prefWidth="192.0" style="-fx-background-color: #6698FF; -fx-border-radius: 25px; -fx-background-radius: 25px;" text="Diagnostic Test">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="73.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/1672381-200.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <AnchorPane layoutY="73.0" prefHeight="479.0" prefWidth="360.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="240.0" fitWidth="360.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/ecg-1953179_1920.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="253.0" fitWidth="383.0" layoutX="-23.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/6925619739_e1885e91c7_b-1024x646.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="424.0" prefHeight="58.0" prefWidth="167.0" text="CALL FOR AMBULANCE " textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="457.0" prefHeight="17.0" prefWidth="235.0" text="CONTACT NO : 01995555741" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="LogOut" layoutX="572.0" layoutY="486.0" onAction="#logoutActionbtn" prefHeight="39.0" prefWidth="111.0" style="-fx-background-color: #342D7E;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="aboutus" layoutX="618.0" layoutY="-1.0" onAction="#aboutusAction" prefHeight="74.0" prefWidth="143.0" text="ABOUT US">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="departmentBTN" layoutX="761.0" layoutY="-1.0" onAction="#departmentBTNAction" prefHeight="74.0" prefWidth="143.0" text="DEPARTMENT">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="mdcnrmndrBTN" alignment="CENTER" contentDisplay="RIGHT" layoutX="637.0" layoutY="361.0" onAction="#mdcnrmndrBTNAction" prefHeight="99.0" prefWidth="192.0" style="-fx-background-color: #6698FF; -fx-border-radius: 25px; -fx-background-radius: 25px;" text="Medicine Remainder">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/img_491790.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="88.0" layoutY="38.0" prefHeight="39.0" prefWidth="301.0" text="HEART OF YOUR HEALTH CARE" textFill="#ff0000fa">
+         <font>
+            <Font name="Calibri Bold Italic" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

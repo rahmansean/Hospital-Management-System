@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to right top, #f0bf0f, #cbc92b, #a8d04a, #86d36a, #66d488, #42d09e, #1ccab2, #00c3c0, #00b5c9, #00a6cf, #0095cf, #0083c9);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HospitalManagementSystem.LoginMainController">
+   <children>
+      <ImageView fitHeight="226.0" fitWidth="281.0" layoutX="114.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/logo2.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="SignUp" layoutX="583.0" layoutY="456.0" onAction="#signedUpbtnAction" prefHeight="59.0" prefWidth="182.0" style="-fx-background-color: #157DEC; -fx-background-radius: 30px;" text="Sign Up" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="Password" focusColor="WHITE" labelFloat="true" layoutX="502.0" layoutY="170.0" prefHeight="25.0" prefWidth="343.0" promptText="  Enter Password" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="#ff7f7f">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </JFXPasswordField>
+      <JFXTextField fx:id="UserName" focusColor="WHITE" labelFloat="true" layoutX="502.0" layoutY="107.0" prefHeight="25.0" prefWidth="343.0" promptText="  Enter User Name" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="#ff7f7f">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </JFXTextField>
+      <JFXRadioButton fx:id="Male" layoutX="502.0" layoutY="245.0" text="Male" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="Gender" />
+         </toggleGroup>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="Female" layoutX="628.0" layoutY="245.0" text="Female" textFill="WHITE" toggleGroup="$Gender">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXRadioButton>
+      <JFXTextArea fx:id="Address" focusColor="WHITE" labelFloat="true" layoutX="502.0" layoutY="292.0" prefHeight="59.0" prefWidth="343.0" promptText="  Enter Current Address" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="#ff7f7f">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextField fx:id="Email" focusColor="WHITE" labelFloat="true" layoutX="502.0" layoutY="382.0" prefHeight="25.0" prefWidth="343.0" promptText="Enter Email" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="#ff7f7f">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXRadioButton fx:id="Other" layoutX="756.0" layoutY="245.0" text="Other" textFill="WHITE" toggleGroup="$Gender">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXRadioButton>
+      <Label contentDisplay="CENTER" graphicTextGap="6.0" layoutX="160.0" layoutY="264.0" prefHeight="41.0" prefWidth="47.0" text="SRS" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" graphicTextGap="6.0" layoutX="207.0" layoutY="264.0" prefHeight="41.0" prefWidth="124.0" text="HOSPITAL" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="468.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/user-icon-png-transparent-17.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="468.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/password-logo-png.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="468.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/gender3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="468.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/location2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="468.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/blue-email-box-circle-png-transparent-icon-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="UserNameError" fitHeight="30.0" fitWidth="33.0" layoutX="845.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="PasswordError" fitHeight="30.0" fitWidth="33.0" layoutX="845.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="EmailError" fitHeight="30.0" fitWidth="33.0" layoutX="845.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="GenderError" fitHeight="30.0" fitWidth="33.0" layoutX="845.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="AdrsError" fitHeight="30.0" fitWidth="33.0" layoutX="845.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="104.0" layoutY="408.0" prefHeight="30.0" prefWidth="247.0" text="Already Have An Account?" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="loginbtn" layoutX="136.0" layoutY="456.0" onAction="#LoginbtnAction" prefHeight="59.0" prefWidth="182.0" style="-fx-background-color: #157DEC; -fx-background-radius: 30px;" text="Log in" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="503.0" layoutY="137.0" prefHeight="17.0" prefWidth="343.0" text="Please insert first name and last name" />
+      <Label layoutX="502.0" layoutY="200.0" prefHeight="17.0" prefWidth="368.0" text="Use at least one[A-Z], [a-z],[0-9],[@#$%^&amp;+=] and total 8 characters" />
+   </children>
+</AnchorPane>

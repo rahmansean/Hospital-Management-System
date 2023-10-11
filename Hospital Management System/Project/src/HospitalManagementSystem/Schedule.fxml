@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to right top, #cbbec6, #cab7c9, #c4b1ce, #baadd5, #a9aadd, #9ab0e8, #85b8f2, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HospitalManagementSystem.ScheduleController">
+   <children>
+      <AnchorPane prefHeight="550.0" prefWidth="249.0" style="-fx-background-color: ash;">
+         <children>
+            <ImageView fx:id="back" fitHeight="44.0" fitWidth="34.0" onMouseClicked="#backAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/back.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <TableView fx:id="tableUsers" layoutX="23.0" layoutY="157.0" prefHeight="356.0" prefWidth="855.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="26.0" style="-fx-font-size: 15;" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="89.0" style="-fx-font-size: 15;" text="Name" />
+            <TableColumn fx:id="colEmail" prefWidth="88.0" style="-fx-font-size: 15;" text="Email" />
+            <TableColumn fx:id="colGender" prefWidth="67.0" style="-fx-font-size: 15;" text="Gender" />
+            <TableColumn fx:id="colBirth" prefWidth="112.0" style="-fx-font-size: 15;" text="Date of Birth" />
+            <TableColumn fx:id="colTime" prefWidth="97.0" style="-fx-font-size: 15;" text="Slot" />
+            <TableColumn fx:id="colDate" minWidth="0.0" prefWidth="148.0" style="-fx-font-size: 15;" text="Appointment Date" />
+            <TableColumn fx:id="colDoctorName" prefWidth="126.0" style="-fx-font-size: 15;" text="Doctor's Name" />
+            <TableColumn fx:id="colDisease" prefWidth="100.0" style="-fx-font-size: 15;" text="Department" />
+        </columns>
+      </TableView>
+      <Label layoutX="313.0" layoutY="24.0" prefHeight="94.0" prefWidth="275.0" text="SCHEDULE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="54.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="725.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/logo2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="722.0" layoutY="111.0" prefHeight="37.0" prefWidth="156.0" text="SRS Hospital">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

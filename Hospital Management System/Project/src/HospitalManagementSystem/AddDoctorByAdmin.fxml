@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Rootpane" prefHeight="427.0" prefWidth="908.0" style="-fx-background-color: linear-gradient(to right top, #d22f6f, #f25155, #fe7e38, #f7ad1b, #dedb27);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HospitalManagementSystem.AddDoctorByAdminController">
+   <children>
+      <JFXTextField fx:id="DoctorName" layoutX="484.0" layoutY="71.0" prefHeight="31.0" prefWidth="410.0" />
+      <JFXTextField fx:id="DoctorQualification" layoutX="484.0" layoutY="169.0" prefHeight="31.0" prefWidth="410.0" />
+      <Label layoutX="326.0" layoutY="69.0" text="Doctor Name:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="166.0" text="Qualification:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="184.0" text="SRS Hospital" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="225.0" text="The Heart of Your Healthcare" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="DoneBtn" layoutX="592.0" layoutY="340.0" onAction="#DoneBtnAction" prefHeight="51.0" prefWidth="134.0" style="-fx-background-radius: 20; -fx-background-color: #C8A2C8;" text="Done">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="112.0" fitWidth="106.0" layoutX="96.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/logo2.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="ConsultationFeesField" layoutX="535.0" layoutY="273.0" prefHeight="31.0" prefWidth="249.0" />
+      <Label layoutX="328.0" layoutY="271.0" text="Consultation Fees:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

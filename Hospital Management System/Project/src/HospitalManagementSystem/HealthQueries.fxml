@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to right top, #313131, #423f50, #544d71, #675c92, #7c6ab5, #9c6bb8, #bb6bb6, #d76cb0, #e36e88, #db7a69, #c78a58, #ad9759);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HospitalManagementSystem.HealthQueriesController">
+   <children>
+      <TableView fx:id="HealthQueriesTable" layoutX="279.0" layoutY="118.0" prefHeight="371.0" prefWidth="604.0">
+        <columns>
+          <TableColumn fx:id="Diseases_col" prefWidth="176.0" style="-fx-font-size: 20;" text="Diseases Name" />
+          <TableColumn fx:id="Symptoms_col" prefWidth="427.0" style="-fx-font-size: 20;" text="Symptoms" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="105.0" fitWidth="111.0" layoutX="99.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/logo2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="60.0" layoutY="251.0" text="SRS Hospital" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="44.0" text="Health Queries" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="300.0" prefHeight="31.0" prefWidth="275.0" text="The Heart of Your Healthcare" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="returnMP" fitHeight="59.0" fitWidth="73.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#returnMPAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/wm_back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
